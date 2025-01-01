@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profesional - Osama Allouch</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            font-size: 18px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #4ca1af;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+            animation: fadeInDown 1s;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-top: 20px;
+            animation: fadeInUp 1.5s;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .skills, .contact {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Osama Allouch</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <div class="hero">
+        <h2>¡Hola! Soy Técnico en Sistemas Informáticos</h2>
+        <p>Especializado en redes, programación y soporte técnico con experiencia en diversas tecnologías y entornos.</p>
+    </div>
+
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>Soy estudiante de Grado Superior en Administración de Sistemas Informáticos en Red, con experiencia laboral en mantenimiento y reparación de equipos informáticos, así como en administración de sistemas operativos. Apasionado por las tecnologías y la resolución de problemas.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li>Lenguajes de Programación: Python, Java, Bash, HTML/CSS, JavaScript</li>
+            <li>Bases de Datos: SQLite, Oracle, MySQL</li>
+            <li>Redes y Seguridad: TCP/IP, DHCP, DNS, NAT, SSH, Telnet</li>
+            <li>Herramientas: Docker, GitHub, Active Directory, Cron, Samba</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <p>Email: <a href="mailto:osama080050@gmail.com">osama080050@gmail.com</a></p>
+        <p>Teléfono: +34 629 616 939</p>
+        <p>Ubicación: Sant Martí, Barcelona</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Osama Allouch. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
